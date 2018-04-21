@@ -1,0 +1,5 @@
+out
+/out/*
+*.iml
+/.idea/*
+/src/edu/movies/servlet/Servlet.java
