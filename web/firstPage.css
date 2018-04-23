@@ -1,0 +1,9 @@
+body {
+    background-color: dodgerblue;
+}
+
+.myImage {
+    opacity: 0.5;
+    max-width: 100%;
+    max-height: inherit;
+}

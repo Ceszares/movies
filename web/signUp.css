@@ -37,15 +37,9 @@ button:hover {
 }
 
 .imgcontainer {
-    max-width: 1200px;
-    max-height: 1200px;
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
+    max-width: 2200px;
+    max-height: 2200px;
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
 }
 
 .container {

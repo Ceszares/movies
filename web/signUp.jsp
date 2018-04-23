@@ -2,16 +2,14 @@
 <%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: Alex
-  Date: 20.04.2018
-  Time: 23:11
+  Date: 21.04.2018
+  Time: 15:08
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
-<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Title</title>
     <link rel="stylesheet" type="text/css" href="nav.css">
 </head>
 <body>
@@ -40,23 +38,11 @@
         }
     %>
 </ul>
-<h2>Login Form</h2>
-
-<form action="${pageContext.request.contextPath}/doLogin" method="post">
+<form action="${pageContext.request.contextPath}/signUp" method="post">
     <div class="imgcontainer">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        <img src="https://image.shutterstock.com/image-vector/movie-time-conceptcreative-template-cinema-260nw-439455385.jpg"
+             alt="Avatar" style="width: 1500px;height: 1000px;">
     </div>
-
-    <%
-        String message = (String) request.getAttribute("message");
-        if (message != null) {
-    %>
-    <p>Message: <%=message%>
-    </p>
-    <%
-        }
-    %>
-
     <div class="container">
         <label for="username"><b>Username</b></label>
         <input type="text" id="username" placeholder="Enter Username" name="username" required>
@@ -64,10 +50,19 @@
         <label for="password"><b>Password</b></label>
         <input type="password" id="password" placeholder="Enter Password" name="password" required>
 
-        <button type="submit">Login</button>
+        <button type="submit">Submit</button>
 
     </div>
-
+    <%
+        String message = (String) request.getAttribute("message");
+        if (message != null) {
+    %>
+    <p>Message: <%=message%>
+    </p>
+    Error
+    <%
+        }
+    %>
 </form>
 
 </body>
