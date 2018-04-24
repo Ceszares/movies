@@ -40,12 +40,10 @@
         }
     %>
 </ul>
-<h2>Login Form</h2>
 
+
+<h2>Login Form</h2>
 <form action="${pageContext.request.contextPath}/doLogin" method="post">
-    <div class="imgcontainer">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
-    </div>
 
     <%
         String message = (String) request.getAttribute("message");
@@ -58,6 +56,9 @@
     %>
 
     <div class="container">
+        <div class="imgcontainer">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        </div>
         <label for="username"><b>Username</b></label>
         <input type="text" id="username" placeholder="Enter Username" name="username" required>
 

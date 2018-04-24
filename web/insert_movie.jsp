@@ -36,6 +36,7 @@
 </ul>
 <h1>New Movie</h1>
 <form action="${pageContext.request.contextPath}/insertMovie" method="post">
+
     <table>
         <tr>
             <td>Title</td>
@@ -58,6 +59,7 @@
             <td><input type="text" name="imageUrl"></td>
         </tr>
     </table>
+
     <br>
     <button type="submit">Submit</button>
 </form>

@@ -11,6 +11,9 @@
 <head>
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="signUp.css">
+
 </head>
 <body>
 <ul>
@@ -38,21 +41,14 @@
         }
     %>
 </ul>
+<h2>Sign Up Form</h2>
 <form action="${pageContext.request.contextPath}/signUp" method="post">
     <div class="imgcontainer">
-        <img src="https://image.shutterstock.com/image-vector/movie-time-conceptcreative-template-cinema-260nw-439455385.jpg"
-             alt="Avatar" style="width: 1500px;height: 1000px;">
+        <img class="imgcontainer"
+             src="https://p14.zdassets.com/hc/settings_assets/451051/200005349/a5d8Fe78iyibcdSPGl3IPQ-logo-gathr-green-text__4_.png"
+        >
     </div>
-    <div class="container">
-        <label for="username"><b>Username</b></label>
-        <input type="text" id="username" placeholder="Enter Username" name="username" required>
 
-        <label for="password"><b>Password</b></label>
-        <input type="password" id="password" placeholder="Enter Password" name="password" required>
-
-        <button type="submit">Submit</button>
-
-    </div>
     <%
         String message = (String) request.getAttribute("message");
         if (message != null) {
@@ -63,6 +59,17 @@
     <%
         }
     %>
+
+    <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" id="username" placeholder="Enter Username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Submit</button>
+
+    </div>
 </form>
 
 </body>
